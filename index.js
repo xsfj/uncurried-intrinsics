@@ -6,8 +6,9 @@ var uncurryThis = require("uncurry-x")
 /**
  * Gets an intrinsic and returns its uncurried version
  * @param {string} intrinsicName - The name of the intrinsic (e.g., "Array.prototype.slice")
- * @param {boolean} allowMissing - Whether to allow missing intrinsics
- * @returns {Function} The uncurried intrinsic function
+ * @param {boolean} [allowMissing=false] - Whether to allow missing intrinsics (returns null/undefined instead of throwing)
+ * @returns {Function|null|undefined} The uncurried intrinsic function, or null/undefined if allowMissing is true and intrinsic doesn't exist
+ * @throws {Error} If the intrinsic is not available and allowMissing is false, or if GetIntrinsic fails
  */
 function uncurryIntrinsic(intrinsicName, allowMissing) {
   var intrinsic

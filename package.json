@@ -1,6 +1,6 @@
 {
   "name": "uncurried-intrinsics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combines es-intrinsic-cache and uncurry-x to get and uncurry JavaScript intrinsics in one step",
   "keywords": [
     "intrinsics",
