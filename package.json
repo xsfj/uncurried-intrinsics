@@ -1,0 +1,33 @@
+{
+  "name": "uncurried-intrinsics",
+  "version": "1.0.0",
+  "description": "Combines es-intrinsic-cache and uncurry-x to get and uncurry JavaScript intrinsics in one step",
+  "keywords": [
+    "intrinsics",
+    "uncurried",
+    "cache",
+    "es",
+    "call-bind",
+    "call-bound",
+    "intrinsic"
+  ],
+  "homepage": "https://github.com/xsfj/uncurried-intrinsics#readme",
+  "bugs": {
+    "url": "https://github.com/xsfj/uncurried-intrinsics/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsfj/uncurried-intrinsics.git"
+  },
+  "license": "MIT",
+  "author": "Fox Jones xsfj",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "es-intrinsic-cache": "^1.0.1",
+    "uncurry-x": "^1.0.1"
+  }
+}
