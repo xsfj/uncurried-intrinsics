@@ -13,7 +13,11 @@ var uncurryThis = require("uncurry-x")
 function uncurryIntrinsic(intrinsicName, allowMissing) {
   var intrinsic
   try {
-    intrinsic = GetIntrinsic(intrinsicName, allowMissing)
+    if (allowMissing != null) {
+      intrinsic = GetIntrinsic(intrinsicName, allowMissing)
+    } else {
+      intrinsic = GetIntrinsic(intrinsicName)
+    }
   } catch (e) {
     throw new Error(
       'Failed to get intrinsic "' + intrinsicName + '": ' + e.message
