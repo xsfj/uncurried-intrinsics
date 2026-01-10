@@ -1,4 +1,4 @@
-# uncurry-intrinsics
+# uncurried-intrinsics
 
 Get an uncurried version of an intrinsic function by name.
 
@@ -9,13 +9,13 @@ Combines `es-intrinsic-cache` and `uncurry-x` to get and uncurry JavaScript intr
 ## Installation
 
 ```bash
-npm install uncurry-intrinsics
+npm install uncurried-intrinsics
 ```
 
 ## Usage
 
 ```javascript
-var uncurryIntrinsic = require("uncurry-intrinsics")
+var uncurryIntrinsic = require("uncurried-intrinsics")
 
 // Get uncurried Array.prototype.slice
 var slice = uncurryIntrinsic("Array.prototype.slice")
@@ -56,7 +56,7 @@ Gets an intrinsic by name and returns its uncurried version where `this` becomes
 ### Array methods
 
 ```javascript
-var uncurryIntrinsic = require("uncurry-intrinsics")
+var uncurryIntrinsic = require("uncurried-intrinsics")
 
 var push = uncurryIntrinsic("Array.prototype.push")
 var join = uncurryIntrinsic("Array.prototype.join")
@@ -69,7 +69,7 @@ join(arr, ", ") // "1, 2, 3, 4, 5"
 ### String methods
 
 ```javascript
-var uncurryIntrinsic = require("uncurry-intrinsics")
+var uncurryIntrinsic = require("uncurried-intrinsics")
 
 var charAt = uncurryIntrinsic("String.prototype.charAt")
 var toUpperCase = uncurryIntrinsic("String.prototype.toUpperCase")
@@ -81,7 +81,7 @@ toUpperCase("hello") // "HELLO"
 ### Object methods
 
 ```javascript
-var uncurryIntrinsic = require("uncurry-intrinsics")
+var uncurryIntrinsic = require("uncurried-intrinsics")
 
 var hasOwnProperty = uncurryIntrinsic("Object.prototype.hasOwnProperty")
 
@@ -93,7 +93,7 @@ hasOwnProperty(obj, "baz") // false
 ### Handling missing intrinsics
 
 ```javascript
-var uncurryIntrinsic = require("uncurry-intrinsics")
+var uncurryIntrinsic = require("uncurried-intrinsics")
 
 // Throws an error if the intrinsic doesn't exist
 try {
